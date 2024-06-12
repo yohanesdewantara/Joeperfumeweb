@@ -15,7 +15,7 @@ class APIController extends Controller
         if ($_daftar_parfum->isEmpty()) {
             return response()->json([
                 'success' => false,
-                'data' => 'Movie not found'
+                'data' => 'Perfume not found'
             ], 404)->header('Access-Control-Allow-Origin', 'http://127.0.0.1:5500');
         } else {
             return response()->json([
